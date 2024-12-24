@@ -6,9 +6,9 @@
 
 //     Display each character's name and thumbnail image in a grid format. */
 
-.thumbnails {
+/* .thumbnails {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     gap: 1rem;
     align-items: center;
     justify-content: center;
@@ -30,4 +30,32 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
+} */
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.character {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.character:hover {
+    transform: scale(1.05);
+}
+
+.character-thumbnail {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.character-name {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
 }
