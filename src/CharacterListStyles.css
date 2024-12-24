@@ -1,0 +1,33 @@
+/* Task 2: Fetch and Display Characters
+
+//     Create a functional component CharacterList to display a list of Marvel Comics characters.
+
+//     Use the useEffect hook to fetch character data from the Marvel Comics API endpoint https://gateway.marvel.com/v1/public/characters?ts=1&apikey=<YOURPUBLICKEY>&hash=<YOURHASH> using Axios.
+
+//     Display each character's name and thumbnail image in a grid format. */
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-thumbnail {
+    width: 200px;
+    height: auto;
+}
+
+.character-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.character-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
